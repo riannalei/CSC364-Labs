@@ -1,0 +1,22 @@
+This program allows you to search through student records from an elementary school using various criteria such as last name, bus route, grade, GPA, and teacher. It reads data from a file called students.txt
+
+Prerequisites
+- Python 3.x must be installed 
+
+How to Run the Program
+- Download the Files: Ensure the following files are in the same directory:
+- schoolsearch.py
+- students.txt
+- list.txt
+- teacher.txt
+
+Run the Program: Open a terminal in the directory where the files are located and execute the following command:
+- python3 schoolsearch.py
+
+- C: <classroom> – Search students by classroom number.
+- T: <classroom> – Search teachers by classroom number.
+- R – Report classroom enrollments.
+- GPA: GRADE – Calculate average GPA by grade.
+- GPA: TEACHER <lastname> – Calculate average GPA for students of a specific teacher.
+- GPA: BUS <bus_number> – Calculate average GPA for students on a specific bus route.
+

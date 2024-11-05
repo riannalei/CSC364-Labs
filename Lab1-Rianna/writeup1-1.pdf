@@ -1,0 +1,49 @@
+Team Member:
+Rianna Lei
+
+Initial Decisions:
+Programming Language: I decided to use Python 3 for this project. Python was chosen because of its simplicity and robust libraries for handling file input/output and data manipulation.
+Development Environment: I developed the program on a macOS machine using Visual Studio Code as my primary code editor.
+
+Internal Architecture:
+Data Structure: I stored the student data from students.txt as a list of dictionaries in Python. Each dictionary represents a student, and the dictionary keys correspond to attributes such as last_name, first_name, grade, classroom, bus, gpa, teacher_last_name, and teacher_first_name. This made it easy to search and filter the student data based on different criteria.
+Functions: I implemented several functions to handle the search queries:
+
+load_students(file_path): Parses the student data from the students.txt file and stores it as a list of dictionaries.
+search_student_by_last_name(students, last_name): Searches for a student by their last name.
+search_students_by_teacher(students, teacher_last_name): Finds students assigned to a specific teacher.
+search_students_by_bus(students, bus_number): Finds students who ride a specific bus route.
+search_students_by_grade(students, grade_number): Lists all students in a specific grade.
+search_high_low_gpa(students, grade_number, high_or_low): Finds the student with the highest or lowest GPA in a given grade.
+calculate_average_gpa(students, grade_number): Calculates the average GPA for students in a specific grade.
+display_students_info(students): Displays the total number of students in each grade.
+User Interface: The program interacts with the user via the command line. It prompts the user for input and waits for commands such as searching by last name, bus route, grade, etc., until the user enters Q to quit.
+
+Task Log:
+Task 1: Parsing the Input File (2 hours)
+Implemented the function to read and parse the students.txt file and store the student data in a list of dictionaries.
+
+Task 2: Implementing Search Functions (2 hours)
+Wrote and tested the individual search functions for student last name, bus route, grade, and teacher last name.
+
+Task 3: GPA and Statistics Functions (2 hours)
+Implemented the logic to find the highest and lowest GPA, calculate the average GPA, and display the number of students per grade
+
+Task 4: Command-Line Interface (2 hours)
+Set up the command prompt interface that accepts user inputs, processes them, and displays results.
+
+Task 5: Testing and Debugging (1 hours)
+ran test cases and verified that the outputs matched the expected results. Found and fixed a few bugs related to input validation and edge cases.
+
+Notes on Testing:
+- Was unable to print out anything except for the Q quit, logic was off 
+- A missing validation check for non-existent student names in the search by last name function
+- Incorrect GPA calculation when there was only one student in the grade
+- Minor formatting issues with output when no students were found in certain categories (e.g., grades with no students)
+
+Final Notes:
+
+File Format: The program assumes that the students.txt file follows the correct format. If the file has incorrect data or formatting, the program will exit without attempting to fix the issue.
+
+This project helped reinforce my understanding of file parsing, working with dictionaries in Python, and building command-line interfaces. 
+

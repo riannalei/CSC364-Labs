@@ -1,0 +1,73 @@
+//TESTS FOR PART B
+// CSC 365
+// Lab 1b test script
+
+// TC-1
+// Tests searching for a student by last name
+// Expected output: DROP, SHERMAN, Grade: 0, Classroom: 104, GPA: 2.67, Teachers: NIBLER, JERLENE
+S: DROP
+
+// TC-2
+// Tests searching for a student by a non-existing last name
+// Expected output: <empty line>
+S: NEMO
+
+// TC-3
+// Tests searching for students in a specific classroom
+// Expected output: DROP, SHERMAN, Grade: 0, GPA: 2.67
+C: 104
+
+// TC-4
+// Tests searching for a non-existing classroom
+// Expected output: No students found in classroom 999.
+C: 999
+
+// TC-5
+// Tests searching for teachers in a specific classroom
+// Expected output: Teacher: NIBLER, JERLENE
+T: 104
+
+// TC-6
+// Tests searching for teachers in a non-existing classroom
+// Expected output: No teachers found in classroom 999.
+T: 999
+
+// TC-7
+// Tests searching for all teachers in a specific grade
+// Expected output: Teacher: NIBLER, JERLENE
+G: 0
+
+// TC-8
+// Tests reporting classroom enrollments
+// Expected output: Classroom 104: 1 student
+R
+
+// TC-9
+// Tests calculating GPA by grade
+// Expected output: Grade 0: Average GPA = 2.67
+GPA: GRADE
+
+// TC-10
+// Tests calculating GPA by teacher
+// Expected output: Teacher NIBLER: Average GPA = 2.67
+GPA: TEACHER NIBLER
+
+// TC-11
+// Tests calculating GPA by bus route
+// Expected output: Bus 53: Average GPA = 2.67
+GPA: BUS 53
+
+// TC-12
+// Tests calculating GPA for a non-existing bus route
+// Expected output: No students found on bus 999.
+GPA: BUS 999
+
+// TC-13
+// Tests calculating GPA for a non-existing teacher
+// Expected output: No students found for teacher UNKNOWN.
+GPA: TEACHER UNKNOWN
+
+// TC-14
+// Tests quitting the program
+// Expected output: Quitting the program.
+Q

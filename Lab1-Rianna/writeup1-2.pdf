@@ -1,0 +1,56 @@
+CSC 365 - Lab 1b Writeup
+
+Team Member: Rianna Lei
+
+Initial Decisions:
+Programming Language: Python was chosen because of its simplicity and the built-in capabilities it offers for file I/O, list, and dictionary operations.
+Development Environment: I used Python 3.8+ on a Linux/Mac terminal, and the program was tested in both terminal and VSCode to ensure compatibility.
+
+Internal Architecture
+- My program reads and processes data from two separate input files: list.txt for student data and teachers.txt for teacher data. These files are linked by the classroom number.
+
+Data Structures:
+- Students: Stored as a list of dictionaries, where each dictionary represents a student. Each student dictionary contains fields such as last_name, first_name, grade, classroom, bus, and gpa.
+- Teachers: Stored as a dictionary, where the key is the classroom number and the value is a list of dictionaries containing teacher_last_name and teacher_first_name. This structure allows flexibility in case multiple teachers are assigned to the same classroom.
+Combining Data: After loading data from the two files, we map teachers to their respective classrooms by linking each student to the corresponding teacher(s) based on the classroom number.
+
+Task Log
+- Loaded student and teacher data (1 hr)
+- Implemented search functionalities for students and teachers (1 hr)
+- Added GPA analytics features (1/2 hr)
+- Conducted testing and debugging (1 hr)
+- Completed documentation and writeup (1 hr)
+
+Testing Notes
+Testing Approach: The test suite (tests.txt) was created to cover both successful and edge cases, such as searching for non-existent students or classrooms. It also includes tests for the extended functionality (NR1–NR5).
+
+Bugs Found:
+Bug 1: When searching for students or teachers in a non-existent classroom, the program initially returned an error instead of a proper message. This was fixed by adding a condition to check if the classroom exists before attempting to access it.
+Bug 2: During GPA calculations for empty results (e.g., no students on a bus route), the program crashed. We added a check for empty lists before performing GPA calculations, ensuring the program doesn’t attempt to calculate averages for non-existent data.
+
+Modifications for Part B
+In Part B, we modified the code to handle the new input data format, which required the following changes:
+
+Changes in Data Loading: Instead of loading all data from students.txt, we now load student data from list.txt and teacher data from teachers.txt. We then map the students to their respective teachers using the classroom number.
+Code Modifications:
+- The load_students function was updated to read from list.txt.
+- A new load_teachers function was added to process teachers.txt.
+- The combine_students_teachers function was introduced to link students to teachers based on the classroom number.
+
+New Commands Implemented
+C: <classroom> – List all students in the specified classroom.
+Example: C: 104
+T: <classroom> – Find the teacher(s) assigned to the classroom.
+Example: T: 104
+R – Report classroom enrollments (i.e., the number of students in each classroom).
+Example: R
+GPA: GRADE – Calculate and display the average GPA for each grade.
+Example: GPA: GRADE
+GPA: TEACHER <lastname> – Calculate the average GPA for students taught by the specified teacher.
+Example: GPA: TEACHER NIBLER
+GPA: BUS <bus_number> – Calculate the average GPA for students assigned to a specific bus route.
+Example: GPA: BUS 53
+
+Final Notes
+One of the main challenges was ensuring that non-existing entries (e.g., students, teachers, classrooms, or bus routes) were handled gracefully without crashing the program. We added several checks to make sure the program responded appropriately with clear error messages.
+Overall, the project was a good exercise in handling multiple data sources and combining them in a meaningful way. The added search functionalities and GPA analytics also required careful consideration of edge cases, which improved the robustness of the program.
