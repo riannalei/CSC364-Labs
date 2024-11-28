@@ -1,0 +1,60 @@
+commit cbc9457449d3819836c04004522bc849e98539a2
+Author: riannalei <riannalei@gmail.com>
+Date:   Wed Nov 27 17:39:36 2024 -0800
+
+    readme
+
+ Lab7/HotelReservationSystem/README.md | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+
+commit 9c43ab40fea593cde7e6b16251daad35057e9e18
+Author: riannalei <riannalei@gmail.com>
+Date:   Wed Nov 27 17:34:11 2024 -0800
+
+    lab7 - full fr1-5
+
+ .../__pycache__/db.cpython-313.pyc                 | Bin 0 -> 3382 bytes
+ Lab7/HotelReservationSystem/db.py                  |  83 +++++
+ Lab7/HotelReservationSystem/main.py                | 402 +++++++++++++++++++++
+ Lab7/HotelReservationSystem/test.py                |   3 +
+ Lab7/HotelReservationSystem/test_db.py             |  12 +
+ 5 files changed, 500 insertions(+)
+
+commit 44c09f1262d2446b1d5635042bb74817871c685a
+Author: riannalei <riannalei@gmail.com>
+Date:   Wed Nov 13 10:46:15 2024 -0800
+
+    lab6
+
+ rxlei-lab6-202411131844.sql | 923 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 923 insertions(+)
+
+commit 2763d48b6304482579ce2402ef7163a1283cc759
+Author: riannalei <riannalei@gmail.com>
+Date:   Mon Nov 4 17:25:55 2024 -0800
+
+    lab5
+
+ rxlei-lab5-202411041953.sql | 387 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 387 insertions(+)
+
+commit 7b39a51029cbc8f567b012c8dbbf2c6af9c0ac21
+Author: riannalei <riannalei@gmail.com>
+Date:   Mon Nov 4 17:24:44 2024 -0800
+
+    labs - for ref
+
+ .DS_Store                   | Bin 0 -> 6148 bytes
+ Lab1-Rianna/.DS_Store       | Bin 0 -> 6148 bytes
+ Lab1-Rianna/list.txt        |  60 +++++
+ Lab1-Rianna/readme          |  22 ++
+ Lab1-Rianna/schoolsearch.py | 210 ++++++++++++++++
+ Lab1-Rianna/students.txt    |  60 +++++
+ Lab1-Rianna/teachers.txt    |  12 +
+ Lab1-Rianna/tests.out       | Bin 0 -> 8651 bytes
+ Lab1-Rianna/tests.txt       |  73 ++++++
+ Lab1-Rianna/writeup1-1.pdf  |  49 ++++
+ Lab1-Rianna/writeup1-2.pdf  |  56 +++++
+ rxlei-lab3.sql              | 124 ++++++++++
+ rxlei-lab4-202410221847.sql | 589 ++++++++++++++++++++++++++++++++++++++++++++
+ 13 files changed, 1255 insertions(+)
